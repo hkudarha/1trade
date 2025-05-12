@@ -105,7 +105,7 @@ const Walletnew = () => {
 
                     {/* Deposit/Withdraw Buttons */}
                     <div className="flex">
-                        <button className="w-1/2 text-2xl py-4 bg-gradient-to-r from-[#0197B0] to-[#7AD659] text-black font-bold rounded-bl-lg">
+                        <button className="w-1/2 btn">
                             DEPOSIT
                         </button>
                         <button className="w-1/2 text-2xl py-4 bg-gray-600 text-white font-bold rounded-br-lg">
@@ -163,7 +163,7 @@ const Walletnew = () => {
                             padding: '1rem',
                             borderRadius: '1rem'
                         }}>
-                            <ResponsiveContainer width="100%" height={200}>
+                            <ResponsiveContainer width="100%" height={210}>
                                 <LineChart data={data}>
                                     <XAxis dataKey="name" hide />
                                     <YAxis hide />
@@ -190,6 +190,9 @@ const Walletnew = () => {
                 {/* left  */}
                 <div className='w-full  sm:w-2/3'>
                     <div className="w-2/3 card ">
+                    <div className='card-inner'>
+
+                    
                         <div className="text-2xl font-semibold ml-8 mb-4">TRANSACTIONS</div>
                         <div className=" dashed-card">
                             {transactions.map((tx) => (
@@ -218,6 +221,7 @@ const Walletnew = () => {
                                 </div>
                             ))}
                         </div>
+                    </div>
                     </div>
 
 

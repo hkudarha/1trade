@@ -21,8 +21,16 @@
 
 .btn {
     color: white;
-    border-radius: 0rem 0rem 0rem 2.8125rem;
+    border-radius: 0rem 0rem 0rem 2.70025rem;
     background: linear-gradient(90deg, #00FBA3 0%, #00CFA2 36.24%, #00B6A1 74.38%, #00A2A1 100%);
+    /* width: 17.94144rem; */
+    height: 5.10044rem;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 1.44013rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 
