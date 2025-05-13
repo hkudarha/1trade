@@ -54,9 +54,12 @@ import Assets from "../../components/Assets";
 import DappWallet from "../../components/DappWallet";
 import UsdtBEP from "../../components/UsdtBEP";
 import UsdtTRC from "../../components/UsdtTRC";
-
+import Activity from "../user/Activity";
+// import { useEffect } from "react";
 
 const Authenticate = () => {
+    
+    
     const role = localStorage.getItem("role");
     return (
         <>
@@ -176,15 +179,7 @@ const Authenticate = () => {
                                 />
                             }
                         />
-                        <Route
-                            path={AuthenticatedRoutes.NEWS_AND_NOTIF_ADMIN}
-                            element={
-                                <DashboardMain
-                                    inner={<NewsandNotifs />}
-                                    name="Content Management "
-                                />
-                            }
-                        />
+                       
                         <Route
                             path={AuthenticatedRoutes.WITHDRAWAL_UPDATE}
                             element={
@@ -220,12 +215,23 @@ const Authenticate = () => {
                                 />
                             }
                         />
+
                         <Route
                             path={AuthenticatedRoutes.BANK_DETAILS}
                             element={
                                 <DashboardMain
                                     inner={<BankDetails />}
                                     name="Bank Detail"
+                                />
+                            }
+                        />
+                         <Route
+                            path={AuthenticatedRoutes.Activity}
+                            
+                            element={
+                                <DashboardMain
+                                    inner={<Activity />}
+                                    name="Content Management "
                                 />
                             }
                         />

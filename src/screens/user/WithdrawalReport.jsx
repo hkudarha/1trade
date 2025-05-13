@@ -55,6 +55,7 @@ const WithdrawalReport = () => {
     <>
       {loading && <PageLoader />}
       <div className="WithdrawalReport martop">
+       
         {/* <div className="top-wrapper">
           <div className="ss-card">
             <div className="txt">
@@ -104,6 +105,7 @@ const WithdrawalReport = () => {
         </div> */}
 
         <div className="dataTable ss-card  martop">
+         
           <DataTable
             value={data}
             paginator

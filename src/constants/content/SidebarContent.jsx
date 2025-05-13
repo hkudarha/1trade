@@ -94,11 +94,25 @@ export const SidebarContent = {
                 // },
             ],
         },
+ 
+    
+       
+
+
         {
             id: "Notification & Announcements",
             icon: <TfiAnnouncement />,
             name: "Notification & Announcements",
             link: AuthenticatedRoutes.NEWS_AND_NOTIF,
+        },
+
+        // route added by vikas 
+
+        {
+            id: "Activity",
+            icon: <TfiAnnouncement />,
+            name: "Acitvity",
+            link: AuthenticatedRoutes.Activity,
         },
        
         {

@@ -1,3 +1,4 @@
+import { Activity } from "lucide-react";
 import Assets from "../components/Assets";
 
 // Authentication Routes
@@ -57,6 +58,7 @@ export const AuthenticatedRoutes = {
   ASSETS:"/assets",
   DAPP_WALLET: "/dappwallet",
   USDT_BEP: "/usdt-bep",
-  USDT_TRC: "/usdt-trc"
+  USDT_TRC: "/usdt-trc",
+  Activity: "/activity",
 
 };

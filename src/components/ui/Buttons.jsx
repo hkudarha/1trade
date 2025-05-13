@@ -47,6 +47,39 @@ export const Button5 = ({ className, name, dataAos, onClick }) => {
   );
 };
 
+
+// src/components/Button5.jsx
+
+
+
+export const Button6 = ({
+  name,
+  className = "",
+  dataAos,
+  onClick,
+  width = "228px",
+  height = "43px",
+  radius = "7.48px",
+}) => {
+  const customStyle = {
+    width,
+    height,
+    borderRadius: radius,
+  };
+
+  return (
+    <button
+      onClick={onClick}
+      data-aos={dataAos}
+      className={`button5 ${className}`}
+      style={customStyle}
+    >
+      {name}
+    </button>
+  );
+};
+
+
 export const ToggleButton = ({ className, dataAos, onClick }) => {
   return (
     <div
@@ -58,3 +91,5 @@ export const ToggleButton = ({ className, dataAos, onClick }) => {
     </div>
   );
 };
+
+
