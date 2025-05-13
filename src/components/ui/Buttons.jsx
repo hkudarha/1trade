@@ -58,3 +58,22 @@ export const ToggleButton = ({ className, dataAos, onClick }) => {
     </div>
   );
 };
+
+
+export const GlowButton = ({ text, onClick }) => {
+  return (
+    <button
+      onClick={onClick}
+      className="relative text-[1.5rem] px-6 py-3 text-green-400 font-semibold rounded border border-transparent 
+                 bg-gradient-to-r from-transparent via-green-500/30 to-transparent 
+                 hover:from-green-600/30 hover:to-green-600/30
+                 hover:text-white 
+                 shadow-md shadow-green-400/20 
+                 transition-all duration-300 
+                 before:absolute before:inset-0 before:rounded before:border before:border-green-400 
+                 before:opacity-50 before:hover:opacity-100 before:transition-all"
+    >
+      <span className="relative z-10">{text}</span>
+    </button>
+  );
+};

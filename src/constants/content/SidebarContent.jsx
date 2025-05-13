@@ -3,7 +3,7 @@ import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { LuPackageSearch } from "react-icons/lu";
 import { AuthenticatedRoutes } from "../Routes";
 import { FaRegNewspaper, FaWallet } from "react-icons/fa6";
-import { MdOutlineAddCard } from "react-icons/md";
+import { MdManageHistory, MdOutlineAddCard } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { MainContent } from "./MainContent";
 import { TfiAnnouncement } from "react-icons/tfi";
@@ -21,7 +21,7 @@ export const SidebarContent = {
             icon: <HiOutlineSquares2X2 />,
             name: "Assets",
             link: AuthenticatedRoutes.ASSETS,
-             options: [
+            options: [
                 {
                     id: "Dapp Wallet",
                     name: "Dapp Wallet",
@@ -39,7 +39,7 @@ export const SidebarContent = {
                 },
             ],
         },
-         {
+        {
             id: "Wallet",
             icon: <FaWallet />,
             name: "Wallet",
@@ -95,12 +95,18 @@ export const SidebarContent = {
             ],
         },
         {
+            id: "History",
+            icon: <MdManageHistory />,
+            name: "History",
+            link: AuthenticatedRoutes.HISTORY,
+        },
+        {
             id: "Notification & Announcements",
             icon: <TfiAnnouncement />,
             name: "Notification & Announcements",
             link: AuthenticatedRoutes.NEWS_AND_NOTIF,
         },
-       
+
         {
             id: "Our Team",
             icon: <FaUsers />,
@@ -135,7 +141,7 @@ export const SidebarContent = {
                 },
             ],
         },
-        
+
         {
             id: "Support",
             icon: <BiSupport />,

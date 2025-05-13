@@ -54,6 +54,7 @@ import Assets from "../../components/Assets";
 import DappWallet from "../../components/DappWallet";
 import UsdtBEP from "../../components/UsdtBEP";
 import UsdtTRC from "../../components/UsdtTRC";
+import History from "../user/income-pages/History";
 
 
 const Authenticate = () => {
@@ -244,16 +245,16 @@ const Authenticate = () => {
                             path={AuthenticatedRoutes.ASSETS}
                             element={
                                 <DashboardMain
-                                    inner={<Assets/>}
+                                    inner={<Assets />}
                                     name="Assets"
                                 />
                             }
                         />
                         <Route
-                            path={AuthenticatedRoutes. DAPP_WALLET}
+                            path={AuthenticatedRoutes.DAPP_WALLET}
                             element={
                                 <DashboardMain
-                                    inner={<DappWallet/>}
+                                    inner={<DappWallet />}
                                     name="Dapp Wallet"
                                 />
                             }
@@ -262,7 +263,7 @@ const Authenticate = () => {
                             path={AuthenticatedRoutes.USDT_BEP}
                             element={
                                 <DashboardMain
-                                    inner={<UsdtBEP/>}
+                                    inner={<UsdtBEP />}
                                     name="USDT(BEP-20)"
                                 />
                             }
@@ -271,7 +272,7 @@ const Authenticate = () => {
                             path={AuthenticatedRoutes.USDT_TRC}
                             element={
                                 <DashboardMain
-                                    inner={<UsdtTRC/>}
+                                    inner={<UsdtTRC />}
                                     name="USDT (TRC-20)"
                                 />
                             }
@@ -349,6 +350,15 @@ const Authenticate = () => {
                                 <DashboardMain
                                     inner={<SelfIncomeReports />}
                                     name="Self Income Report"
+                                />
+                            }
+                        />
+                        <Route
+                            path={AuthenticatedRoutes.HISTORY}
+                            element={
+                                <DashboardMain
+                                    inner={<History />}
+                                    name="History"
                                 />
                             }
                         />
