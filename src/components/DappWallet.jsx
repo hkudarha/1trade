@@ -1,24 +1,28 @@
 import React from 'react'
+import img1 from "../assets/website/11111.png"
+import img2 from "../assets/website/22222.png"
+import img3 from "../assets/website/333 1.png"
+import img4 from "../assets/website/4444.png"
 const data = [
     {
         title: "CURRENT HOLDING",
         amount: "5500",
-        icon: "/icons/holding.png",
+        icon: img1,
     },
     {
         title: "TOTAL EARNING",
         amount: "8000",
-        icon: "/icons/earning.png",
+        icon: img2,
     },
     {
         title: "WITHDRAWN",
         amount: "2500",
-        icon: "/icons/withdrawn.png",
+        icon: img3,
     },
     {
         title: "UNDRAWN",
         amount: "8000",
-        icon: "/icons/undrawn.png",
+        icon: img4,
     },
 ];
 
@@ -27,7 +31,7 @@ const DappWallet = () => {
     return (
         <div className='h-full w-full '>
             <div className='w-full'>
-                <div className="min-h-screen bg-gradient-to-r from-[#0B1F1A] to-[#0F2C21] p-8">
+                <div className="min-h-screen p-8">
                     <button className="bg-white/10 text-white text-sm px-4 py-1 rounded mb-6">
                         Main Wallet Balance
                     </button>
