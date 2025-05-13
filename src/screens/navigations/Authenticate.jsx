@@ -55,6 +55,8 @@ import DappWallet from "../../components/DappWallet";
 import UsdtBEP from "../../components/UsdtBEP";
 import UsdtTRC from "../../components/UsdtTRC";
 import Activity from "../user/Activity";
+import Withdrawalnew from "../../components/Withdrawalnew";
+import Market from "../../components/Market";
 // import { useEffect } from "react";
 
 const Authenticate = () => {
@@ -279,6 +281,25 @@ const Authenticate = () => {
                                 <DashboardMain
                                     inner={<UsdtTRC/>}
                                     name="USDT (TRC-20)"
+                                />
+                            }
+                        />
+
+                        <Route
+                            path={AuthenticatedRoutes.WITHDRAWAL}
+                            element={
+                                <DashboardMain
+                                    inner={<Withdrawalnew/>}
+                                    name="Withdrawal"
+                                />
+                            }
+                        />
+                        <Route
+                            path={AuthenticatedRoutes.MARKET}
+                            element={
+                                <DashboardMain
+                                    inner={<Market/>}
+                                    name="Market"
                                 />
                             }
                         />

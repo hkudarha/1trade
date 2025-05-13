@@ -7,6 +7,9 @@ import { MdOutlineAddCard } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { MainContent } from "./MainContent";
 import { TfiAnnouncement } from "react-icons/tfi";
+import { MdCheck } from 'react-icons/md';
+import { MdCreditCard } from 'react-icons/md';
+
 
 export const SidebarContent = {
     user: [
@@ -18,7 +21,7 @@ export const SidebarContent = {
         },
         {
             id: "Assets",
-            icon: <HiOutlineSquares2X2 />,
+            icon: <MdCreditCard />,
             name: "Assets",
             link: AuthenticatedRoutes.ASSETS,
              options: [
@@ -36,6 +39,11 @@ export const SidebarContent = {
                     id: "USDT(TRC-20)",
                     name: "USDT(TRC-20)",
                     link: AuthenticatedRoutes.USDT_TRC,
+                },
+                {
+                    id: "WITHDRAWAL",
+                    name: "WITHDRAWAL",
+                    link: AuthenticatedRoutes.WITHDRAWAL,
                 },
             ],
         },
@@ -57,21 +65,21 @@ export const SidebarContent = {
             ],
         },
 
-        {
-            id: "Income Report",
-            icon: <LuPackageSearch />,
-            name: "Income Report",
-            options: [
-                {
-                    id: "Referral Income",
-                    name: "Referral Income",
-                    link: AuthenticatedRoutes.REFERRAL_INCOME_REPORT,
-                },
-                {
-                    id: "ROI Income",
-                    name: "ROI Income",
-                    link: AuthenticatedRoutes.ROI_INCOME_REPORT,
-                },
+        // {
+        //     id: "Income Report",
+        //     icon: <LuPackageSearch />,
+        //     name: "Income Report",
+        //     options: [
+        //         {
+        //             id: "Referral Income",
+        //             name: "Referral Income",
+        //             link: AuthenticatedRoutes.REFERRAL_INCOME_REPORT,
+        //         },
+        //         {
+        //             id: "ROI Income",
+        //             name: "ROI Income",
+        //             link: AuthenticatedRoutes.ROI_INCOME_REPORT,
+        //         },
                 // {
                 //   id: "Spin Income",
                 //   name: "Spin Income",
@@ -92,19 +100,19 @@ export const SidebarContent = {
                 //     name: "Matching Income",
                 //     link: AuthenticatedRoutes.MATCHING_INCOME_REPORT,
                 // },
-            ],
-        },
+        //     ],
+        // },
  
     
        
 
 
-        {
-            id: "Notification & Announcements",
-            icon: <TfiAnnouncement />,
-            name: "Notification & Announcements",
-            link: AuthenticatedRoutes.NEWS_AND_NOTIF,
-        },
+        // {
+        //     id: "Notification & Announcements",
+        //     icon: <TfiAnnouncement />,
+        //     name: "Notification & Announcements",
+        //     link: AuthenticatedRoutes.NEWS_AND_NOTIF,
+        // },
 
         // route added by vikas 
 
@@ -113,6 +121,14 @@ export const SidebarContent = {
             icon: <TfiAnnouncement />,
             name: "Acitvity",
             link: AuthenticatedRoutes.Activity,
+        },
+       
+
+        {
+            id: "Market",
+            icon: <MdCheck />,
+            name: "Market",
+            link: AuthenticatedRoutes.MARKET,
         },
        
         {

@@ -60,5 +60,7 @@ export const AuthenticatedRoutes = {
   USDT_BEP: "/usdt-bep",
   USDT_TRC: "/usdt-trc",
   Activity: "/activity",
+  WITHDRAWAL:"/withdrawalnew",
+  MARKET:"/market"
 
 };
