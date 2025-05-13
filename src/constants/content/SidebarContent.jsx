@@ -16,6 +16,29 @@ export const SidebarContent = {
             name: "Dashboard",
             link: AuthenticatedRoutes.USER_DASHBOARD,
         },
+        {
+            id: "Assets",
+            icon: <HiOutlineSquares2X2 />,
+            name: "Assets",
+            link: AuthenticatedRoutes.ASSETS,
+             options: [
+                {
+                    id: "Dapp Wallet",
+                    name: "Dapp Wallet",
+                    link: AuthenticatedRoutes.DAPP_WALLET,
+                },
+                {
+                    id: "USDT(BEP-20)",
+                    name: "USDT(BEP-20)",
+                    link: AuthenticatedRoutes.USDT_BEP,
+                },
+                {
+                    id: "USDT(TRC-20)",
+                    name: "USDT(TRC-20)",
+                    link: AuthenticatedRoutes.USDT_TRC,
+                },
+            ],
+        },
          {
             id: "Wallet",
             icon: <FaWallet />,

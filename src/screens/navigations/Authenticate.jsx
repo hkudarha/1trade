@@ -50,6 +50,10 @@ import ActiveUsers from "../admin/ActiveUsers";
 import DirectRefferalIncomeHistory from "../user/income-pages/DirectRefferalIncomeHistory";
 import Investplans from "../user/Investplans";
 import Walletnew from "../../components/Walletnew";
+import Assets from "../../components/Assets";
+import DappWallet from "../../components/DappWallet";
+import UsdtBEP from "../../components/UsdtBEP";
+import UsdtTRC from "../../components/UsdtTRC";
 
 
 const Authenticate = () => {
@@ -234,6 +238,46 @@ const Authenticate = () => {
                                 />
                             }
                         />
+
+                        {/* assets page  */}
+                        <Route
+                            path={AuthenticatedRoutes.ASSETS}
+                            element={
+                                <DashboardMain
+                                    inner={<Assets/>}
+                                    name="Assets"
+                                />
+                            }
+                        />
+                        <Route
+                            path={AuthenticatedRoutes. DAPP_WALLET}
+                            element={
+                                <DashboardMain
+                                    inner={<DappWallet/>}
+                                    name="Dapp Wallet"
+                                />
+                            }
+                        />
+                        <Route
+                            path={AuthenticatedRoutes.USDT_BEP}
+                            element={
+                                <DashboardMain
+                                    inner={<UsdtBEP/>}
+                                    name="USDT(BEP-20)"
+                                />
+                            }
+                        />
+                        <Route
+                            path={AuthenticatedRoutes.USDT_TRC}
+                            element={
+                                <DashboardMain
+                                    inner={<UsdtTRC/>}
+                                    name="USDT (TRC-20)"
+                                />
+                            }
+                        />
+
+
                         <Route
                             path={AuthenticatedRoutes.REFERRAL_INCOME_REPORT}
                             element={

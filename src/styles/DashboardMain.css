@@ -41,7 +41,8 @@
     font-size: 2.4rem;
     font-weight: 600;
     line-height: 2.8rem;
-    color: var(--main-purple);
+    /* color: var(--main-purple); */
+    color: #00e396;
 }
 .DashboardHeader .user-login {
     display: flex;

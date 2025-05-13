@@ -1,3 +1,5 @@
+import Assets from "../components/Assets";
+
 // Authentication Routes
 export const AuthRoutes = {
   LOGIN: "/login",
@@ -51,5 +53,10 @@ export const AuthenticatedRoutes = {
   WITHDRAWAL_UPDATE: "/withdrawal-update",
   ACTIVE_USERS: "/active-users",
   DIRECT_REFERRAL_INCOME_REPORT: "/direct-referral-income-report",
-  Wallet:"/wallet"
+  Wallet:"/wallet",
+  ASSETS:"/assets",
+  DAPP_WALLET: "/dappwallet",
+  USDT_BEP: "/usdt-bep",
+  USDT_TRC: "/usdt-trc"
+
 };
