@@ -3,7 +3,7 @@ import img from "../assets/Animation.png"
 import img1 from "../assets/Cam2.png"
 const UsdtBEP = () => {
   return (
-    <div className='w-full flex h-full relative'>
+    <div className='w-full h-full flex flex-col sm:flex-row relative'>
       {/* left  */}
       <div className='sm:flex-1 w-full h-full relative'>
         <div className='flex items-center '>

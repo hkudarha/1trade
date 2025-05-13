@@ -4,7 +4,7 @@ import img2 from "../assets/Crypto Coins.png"
 
 const UsdtTRC = () => {
   return (
-    <div className='w-full flex h-full relative'>
+    <div className='w-full h-full flex flex-col sm:flex-row relative'>
           {/* left  */}
           <div className='sm:flex-1 w-full h-full relative'>
             <div className='flex items-center '>
