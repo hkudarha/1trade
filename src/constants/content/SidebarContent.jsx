@@ -3,11 +3,10 @@ import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { LuBrainCircuit, LuPackageSearch } from "react-icons/lu";
 import { AuthenticatedRoutes } from "../Routes";
 import { FaRegNewspaper, FaWallet } from "react-icons/fa6";
-import { MdManageHistory, MdOutlineAddCard } from "react-icons/md";
+import { MdCreditCard, MdManageHistory, MdOutlineAddCard } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { MainContent } from "./MainContent";
 import { TfiAnnouncement } from "react-icons/tfi";
-import { GrAchievement, GrAnnounce } from "react-icons/gr";
 
 export const SidebarContent = {
     user: [
@@ -19,7 +18,7 @@ export const SidebarContent = {
         },
         {
             id: "Assets",
-            icon: <HiOutlineSquares2X2 />,
+            icon: <MdCreditCard />,
             name: "Assets",
             link: AuthenticatedRoutes.ASSETS,
             options: [
@@ -37,6 +36,11 @@ export const SidebarContent = {
                     id: "USDT(TRC-20)",
                     name: "USDT(TRC-20)",
                     link: AuthenticatedRoutes.USDT_TRC,
+                },
+                {
+                    id: "WITHDRAWAL",
+                    name: "WITHDRAWAL",
+                    link: AuthenticatedRoutes.WITHDRAWAL,
                 },
             ],
         },
@@ -57,90 +61,12 @@ export const SidebarContent = {
                 },
             ],
         },
-
-        {
-            id: "Income Report",
-            icon: <LuPackageSearch />,
-            name: "Income Report",
-            options: [
-                {
-                    id: "Referral Income",
-                    name: "Referral Income",
-                    link: AuthenticatedRoutes.REFERRAL_INCOME_REPORT,
-                },
-                {
-                    id: "ROI Income",
-                    name: "ROI Income",
-                    link: AuthenticatedRoutes.ROI_INCOME_REPORT,
-                },
-                // {
-                //   id: "Spin Income",
-                //   name: "Spin Income",
-                //   link: AuthenticatedRoutes.SPIN_INCOME_REPORT,
-                // },
-                // {
-                //   id: "Royalty Income",
-                //   name: "ROI Income",
-                //   link: AuthenticatedRoutes.ROYALTY_INCOME_REPORT,
-                // },
-                // {
-                //     id: "Level Income",
-                //     name: "Level Income",
-                //     link: AuthenticatedRoutes.LEVEL_INCOME_REPORT,
-                // },
-                // {
-                //     id: "Matching Income",
-                //     name: "Matching Income",
-                //     link: AuthenticatedRoutes.MATCHING_INCOME_REPORT,
-                // },
-            ],
-        },
-        {
-            id: "History",
-            icon: <MdManageHistory />,
-            name: "History",
-            link: AuthenticatedRoutes.HISTORY,
-        },
-        {
-            id: "AI Agent",
-            icon: <LuBrainCircuit />,
-            name: "AI Agent",
-            link: AuthenticatedRoutes.AI_AGENT,
-        },
-        {
-            id: "Support-AI",
-            icon: <BiSupport />,
-            name: "Support",
-            link: AuthenticatedRoutes.SUPPORT,
-        },
-        {
-            id: "Announcements",
-            icon: <GrAnnounce />,
-            name: "Announcements",
-            link: AuthenticatedRoutes.ANNOUNCEMENTS,
-        },
-        {
-            id: "Level Achievement",
-            icon: <GrAchievement />,
-            name: "Level Achievement",
-            link: AuthenticatedRoutes.LEVEL_ACHIEVEMENT,
-        },
-        {
-            id: "Notification & Announcements",
-            icon: <TfiAnnouncement />,
-            name: "Notification & Announcements",
-            link: AuthenticatedRoutes.NEWS_AND_NOTIF,
-        },
-
-        // route added by vikas 
-
         {
             id: "Activity",
             icon: <TfiAnnouncement />,
             name: "Acitvity",
             link: AuthenticatedRoutes.Activity,
         },
-
         {
             id: "Our Team",
             icon: <FaUsers />,
@@ -199,20 +125,66 @@ export const SidebarContent = {
                 // },
             ],
         },
-        // {
-        //   id: "Profile",
-        //   icon: <FaUserTie />,
-        //   name: "Account Setting",
-        //   options: [
-        //     {
-        //       id: "Profile",
-        //       name: "Profile",
-        //       link: AuthenticatedRoutes.USER_PROFILE,
-        //     },
 
-        //   ],
+
+        // {
+        //     id: "Income Report",
+        //     icon: <LuPackageSearch />,
+        //     name: "Income Report",
+        //     options: [
+        //         {
+        //             id: "Referral Income",
+        //             name: "Referral Income",
+        //             link: AuthenticatedRoutes.REFERRAL_INCOME_REPORT,
+        //         },
+        //         {
+        //             id: "ROI Income",
+        //             name: "ROI Income",
+        //             link: AuthenticatedRoutes.ROI_INCOME_REPORT,
+        //         },
+        // {
+        //   id: "Spin Income",
+        //   name: "Spin Income",
+        //   link: AuthenticatedRoutes.SPIN_INCOME_REPORT,
+        // },
+        // {
+        //   id: "Royalty Income",
+        //   name: "ROI Income",
+        //   link: AuthenticatedRoutes.ROYALTY_INCOME_REPORT,
+        // },
+        // {
+        //     id: "Level Income",
+        //     name: "Level Income",
+        //     link: AuthenticatedRoutes.LEVEL_INCOME_REPORT,
+        // },
+        // {
+        //     id: "Matching Income",
+        //     name: "Matching Income",
+        //     link: AuthenticatedRoutes.MATCHING_INCOME_REPORT,
         // },
     ],
+
+
+
+
+    // route added by vikas 
+
+
+
+    // {
+    //   id: "Profile",
+    //   icon: <FaUserTie />,
+    //   name: "Account Setting",
+    //   options: [
+    //     {
+    //       id: "Profile",
+    //       name: "Profile",
+    //       link: AuthenticatedRoutes.USER_PROFILE,
+    //     },
+
+    //   ],
+    // },
+
     admin: [
         {
             id: "Dashboard",

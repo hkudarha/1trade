@@ -25,8 +25,8 @@ export const backendConfig = {
   // origin: "https://api.worldtrades.in",
   // base: "http://192.168.29.127:6042/api",
   // origin: "http://192.168.29.127:6042",
-  base: "http://192.168.1.21:7000/api",
-  origin: "http://192.168.1.21:7000",
+  base: "http://192.168.1.21:9000/api",
+  origin: "http://192.168.1.21:9000",
 
 
   // base: "https://api.worldtrades.in/api",
