@@ -1,5 +1,5 @@
 // import appLogo from "../../assets/app/appLogo.jpg";
-import appLogoClr from "../../assets/website/worldTrade.png";
+import appLogoClr from "../../assets/websitroue/worldTrade.png";
 import icon from "../../assets/website/worldTrade.png";
 export const MainContent = {
   appName: "WORLD TRADE",

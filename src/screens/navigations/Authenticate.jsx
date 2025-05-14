@@ -55,18 +55,15 @@ import DappWallet from "../../components/DappWallet";
 import UsdtBEP from "../../components/UsdtBEP";
 import UsdtTRC from "../../components/UsdtTRC";
 import Activity from "../user/Activity";
-<<<<<<< HEAD
 import Withdrawalnew from "../../components/Withdrawalnew";
 import Market from "../../components/Market";
 import AirdropAlert from "../user/AirdropAlert";
-=======
 import History from "../user/History"
 import AiAgent from "../user/AiAgent";
 import AiAgentDetails from "../user/AiAgentDetails";
 import Support from "../user/Support";
 import Announcement from "../user/Announcement";
 import LevelAchievement from "../user/LevelAchievement";
->>>>>>> d308730531495a6c915883832c05b65cae946a91
 // import { useEffect } from "react";
 import History from "../user/income-pages/History";
 
@@ -239,12 +236,9 @@ const Authenticate = () => {
                                 />
                             }
                         />
-<<<<<<< HEAD
                         {/* Routes added by vikas  */}
-                         <Route
-=======
+                        
                         <Route
->>>>>>> d308730531495a6c915883832c05b65cae946a91
                             path={AuthenticatedRoutes.Activity}
 
                             element={
