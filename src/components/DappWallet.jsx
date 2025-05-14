@@ -13,9 +13,6 @@ import bcard5 from "../assets/555.png"
 import Swal from 'sweetalert2'
 
 
-import React, { useState } from 'react';
-
-
 const data = [
     {
         title: "CURRENTHOLDING",
