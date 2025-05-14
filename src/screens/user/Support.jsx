@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { GlowButton } from '../../components/ui/Buttons'
 import supportAi from '../../assets/support-ai.png'
 import { BsEmojiSmileFill } from 'react-icons/bs'

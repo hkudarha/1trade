@@ -7,7 +7,6 @@ import { MdManageHistory, MdOutlineAddCard } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { MainContent } from "./MainContent";
 import { TfiAnnouncement } from "react-icons/tfi";
-import { BiSupport } from "react-icons/bi";
 import { GrAchievement, GrAnnounce } from "react-icons/gr";
 
 export const SidebarContent = {
