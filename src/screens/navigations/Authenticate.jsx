@@ -55,14 +55,25 @@ import DappWallet from "../../components/DappWallet";
 import UsdtBEP from "../../components/UsdtBEP";
 import UsdtTRC from "../../components/UsdtTRC";
 import Activity from "../user/Activity";
+<<<<<<< HEAD
 import Withdrawalnew from "../../components/Withdrawalnew";
 import Market from "../../components/Market";
 import AirdropAlert from "../user/AirdropAlert";
+=======
+import History from "../user/History"
+import AiAgent from "../user/AiAgent";
+import AiAgentDetails from "../user/AiAgentDetails";
+import Support from "../user/Support";
+import Announcement from "../user/Announcement";
+import LevelAchievement from "../user/LevelAchievement";
+>>>>>>> d308730531495a6c915883832c05b65cae946a91
 // import { useEffect } from "react";
+import History from "../user/income-pages/History";
+
 
 const Authenticate = () => {
-    
-    
+
+
     const role = localStorage.getItem("role");
     return (
         <>
@@ -182,7 +193,7 @@ const Authenticate = () => {
                                 />
                             }
                         />
-                       
+
                         <Route
                             path={AuthenticatedRoutes.WITHDRAWAL_UPDATE}
                             element={
@@ -228,10 +239,14 @@ const Authenticate = () => {
                                 />
                             }
                         />
+<<<<<<< HEAD
                         {/* Routes added by vikas  */}
                          <Route
+=======
+                        <Route
+>>>>>>> d308730531495a6c915883832c05b65cae946a91
                             path={AuthenticatedRoutes.Activity}
-                            
+
                             element={
                                 <DashboardMain
                                     inner={<Activity />}
@@ -264,16 +279,16 @@ const Authenticate = () => {
                             path={AuthenticatedRoutes.ASSETS}
                             element={
                                 <DashboardMain
-                                    inner={<Assets/>}
+                                    inner={<Assets />}
                                     name="Assets"
                                 />
                             }
                         />
                         <Route
-                            path={AuthenticatedRoutes. DAPP_WALLET}
+                            path={AuthenticatedRoutes.DAPP_WALLET}
                             element={
                                 <DashboardMain
-                                    inner={<DappWallet/>}
+                                    inner={<DappWallet />}
                                     name="Dapp Wallet"
                                 />
                             }
@@ -282,7 +297,7 @@ const Authenticate = () => {
                             path={AuthenticatedRoutes.USDT_BEP}
                             element={
                                 <DashboardMain
-                                    inner={<UsdtBEP/>}
+                                    inner={<UsdtBEP />}
                                     name="USDT(BEP-20)"
                                 />
                             }
@@ -291,7 +306,7 @@ const Authenticate = () => {
                             path={AuthenticatedRoutes.USDT_TRC}
                             element={
                                 <DashboardMain
-                                    inner={<UsdtTRC/>}
+                                    inner={<UsdtTRC />}
                                     name="USDT (TRC-20)"
                                 />
                             }
@@ -388,6 +403,15 @@ const Authenticate = () => {
                                 <DashboardMain
                                     inner={<SelfIncomeReports />}
                                     name="Self Income Report"
+                                />
+                            }
+                        />
+                        <Route
+                            path={AuthenticatedRoutes.HISTORY}
+                            element={
+                                <DashboardMain
+                                    inner={<History />}
+                                    name="History"
                                 />
                             }
                         />
@@ -526,6 +550,60 @@ const Authenticate = () => {
                                 <DashboardMain
                                     inner={<Notification />}
                                     name="Notification & Announcements "
+                                />
+                            }
+                        />
+                        <Route
+                            path={AuthenticatedRoutes.HISTORY}
+                            element={
+                                <DashboardMain
+                                    inner={<History />}
+                                    name="History"
+                                />
+                            }
+                        />
+                        <Route
+                            path={AuthenticatedRoutes.AI_AGENT}
+                            element={
+                                <DashboardMain
+                                    inner={<AiAgent />}
+                                    name="AI Agent"
+                                />
+                            }
+                        />
+                        <Route
+                            path={AuthenticatedRoutes.AI_AGENT_DETAILS}
+                            element={
+                                <DashboardMain
+                                    inner={<AiAgentDetails />}
+                                    name="AI Agent Details"
+                                />
+                            }
+                        />
+                        <Route
+                            path={AuthenticatedRoutes.SUPPORT}
+                            element={
+                                <DashboardMain
+                                    inner={<Support />}
+                                    name="Support"
+                                />
+                            }
+                        />
+                        <Route
+                            path={AuthenticatedRoutes.ANNOUNCEMENTS}
+                            element={
+                                <DashboardMain
+                                    inner={<Announcement />}
+                                    name="Announcements"
+                                />
+                            }
+                        />
+                        <Route
+                            path={AuthenticatedRoutes.LEVEL_ACHIEVEMENT}
+                            element={
+                                <DashboardMain
+                                    inner={<LevelAchievement />}
+                                    name="Level Achievement"
                                 />
                             }
                         />

@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+
 export const Button1 = ({ className, name, dataAos, onClick }) => {
   return (
     <button
@@ -10,6 +11,7 @@ export const Button1 = ({ className, name, dataAos, onClick }) => {
     </button>
   );
 };
+
 export const ButtonGlow = ({ className, name, dataAos, onClick }) => {
   return (
     <button
@@ -21,6 +23,7 @@ export const ButtonGlow = ({ className, name, dataAos, onClick }) => {
     </button>
   );
 };
+
 export const Button2 = ({ className, name, dataAos, onClick, disabled, type }) => {
   return (
     <button
@@ -29,12 +32,12 @@ export const Button2 = ({ className, name, dataAos, onClick, disabled, type }) =
       disabled={disabled}
       className={`Button2 ${className}`}
       type={type}
-      
     >
       {name}
     </button>
   );
 };
+
 export const Button5 = ({ className, name, dataAos, onClick }) => {
   return (
     <button
@@ -46,11 +49,6 @@ export const Button5 = ({ className, name, dataAos, onClick }) => {
     </button>
   );
 };
-
-
-// src/components/Button5.jsx
-
-
 
 export const Button6 = ({
   name,
@@ -79,7 +77,6 @@ export const Button6 = ({
   );
 };
 
-
 export const ToggleButton = ({ className, dataAos, onClick }) => {
   return (
     <div
@@ -92,4 +89,21 @@ export const ToggleButton = ({ className, dataAos, onClick }) => {
   );
 };
 
-
+// Fixed single valid version of GlowButton
+export const GlowButton = ({ text = "Asset History", onClick }) => {
+  return (
+    <button
+      onClick={onClick}
+      className="relative text-[1.5rem] px-6 py-3 text-green-400 font-semibold rounded border border-transparent
+      bg-gradient-to-r from-transparent via-green-500/30 to-transparent
+      hover:from-green-600/30 hover:to-green-600/30
+      hover:text-white
+      shadow-md shadow-green-400/20
+      transition-all duration-300
+      before:absolute before:inset-0 before:rounded before:border before:border-green-400
+      before:opacity-50 before:hover:opacity-100 before:transition-all"
+    >
+      <span className="relative z-10">{text}</span>
+    </button>
+  );
+};
