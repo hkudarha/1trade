@@ -122,6 +122,12 @@ export const SidebarContent = {
             name: "Acitvity",
             link: AuthenticatedRoutes.Activity,
         },
+        {
+            id: "AirDrop Alert",
+            icon: <TfiAnnouncement />,
+            name: "AIrDrop Alert",
+            link: AuthenticatedRoutes.USERAIRDROPALERT,
+        },
        
 
         {

@@ -57,6 +57,7 @@ import UsdtTRC from "../../components/UsdtTRC";
 import Activity from "../user/Activity";
 import Withdrawalnew from "../../components/Withdrawalnew";
 import Market from "../../components/Market";
+import AirdropAlert from "../user/AirdropAlert";
 // import { useEffect } from "react";
 
 const Authenticate = () => {
@@ -227,13 +228,24 @@ const Authenticate = () => {
                                 />
                             }
                         />
+                        {/* Routes added by vikas  */}
                          <Route
                             path={AuthenticatedRoutes.Activity}
                             
                             element={
                                 <DashboardMain
                                     inner={<Activity />}
-                                    name="Content Management "
+                                    name="Activity"
+                                />
+                            }
+                        />
+                         <Route
+                            path={AuthenticatedRoutes.USERAIRDROPALERT}
+                            
+                            element={
+                                <DashboardMain
+                                    inner={<AirdropAlert />}
+                                    name="Airdrop Alert"
                                 />
                             }
                         />
