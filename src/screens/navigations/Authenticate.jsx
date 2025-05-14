@@ -65,7 +65,6 @@ import Support from "../user/Support";
 import Announcement from "../user/Announcement";
 import LevelAchievement from "../user/LevelAchievement";
 // import { useEffect } from "react";
-import History from "../user/income-pages/History";
 
 
 const Authenticate = () => {
