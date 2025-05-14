@@ -10,6 +10,10 @@ import bcard2 from "../assets/iconn.png"
 import bcard3 from "../assets/iconnn.png"
 import bcard4 from "../assets/66.png"
 import bcard5 from "../assets/555.png"
+import Swal from 'sweetalert2'
+
+
+import React, { useState } from 'react';
 
 
 const data = [
@@ -37,13 +41,27 @@ const data = [
 
 
 const DappWallet = () => {
+
+
+    const connectWallet = () => {
+        console.log("Connect wallet logic goes here");
+    };
+
+    const handleConnectClick = () => {
+        Swal.fire({
+            title: "Your wallet is Connected!",
+            icon: "success",
+            draggable: true
+        });
+    }
+
     return (
         <div className='h-full w-full '>
             <div className='w-full'>
                 <div className=" p-8">
-                    <button className="bg-white/10 text-xl text-white  px-4 py-1 rounded mb-6">
+                    <h3 className="bg-white/10 w-fit text-xl text-white  px-4 py-1 rounded mb-6">
                         Main Wallet Balance
-                    </button>
+                    </h3>
 
                     <div className="flex flex-wrap gap-[6rem]">
                         {data.map((item, index) => (
@@ -56,10 +74,9 @@ const DappWallet = () => {
                     </div>
                 </div>
                 <div className=" p-8">
-                    <button className="bg-white/10 text-xl text-white  px-4 py-1 rounded mb-6">
-
+                    <h3 className="bg-white/10 w-fit  text-xl text-white  px-4 py-1 rounded mb-6">
                         Additional Balance
-                    </button>
+                    </h3>
 
                     <div className="flex flex-wrap gap-[6rem]">
                         {data.map((item, index) => (
@@ -72,10 +89,15 @@ const DappWallet = () => {
                     </div>
                 </div>
             </div>
+
+
+
+            {/* bottom card  */}
+
             <div className='w-full  flex flex-col  sm:flex-row relative'>
                 <div className='sm:w-1/2  p-[10rem] mb-8 w-full h-[40rem] items-center justify-center  relative'>
-                    
-                        <div className=''>
+
+                    <div className=''>
                         <div className='flex gap-4 items-center'>
                             <img src={img5} alt="" className='w-[5rem] h-[5rem]' />
                             <h5 className='text-bold text-3xl'>USDT (TRC-20)</h5>
@@ -90,20 +112,31 @@ const DappWallet = () => {
                         </div>
                         <button className='w-full rounded-[0.625rem] border px-8 py-4 text-bod text-2xl mt-4'>Chain Setting</button>
                     </div>
-                    
+
                 </div>
+
+
+                {/* DAPP WALLET CONNECT */}
+
+
                 <div className='sm:w-1/2 w-full p-[10rem]'>
-                        <div>
-                            <h3 className='font-bold text-3xl my-4'>DAPP WALLET CONNECT</h3>
-                            <div className=' !flex items-center justify-center rounded-3xl border border-[#155F5C]'>
-                                <img src={bcard1} alt="" className='w-[5rem] h-[5rem]'/>
-                                <img src={bcard2} alt="" className='w-[5rem] h-[5rem]'/>
-                                <img src={bcard3} alt="" className='w-[6rem] h-[6rem]'/>
-                                <img src={bcard4} alt="" className='w-[5rem] h-[5rem]'/>
-                                <img src={bcard5} alt="" className='w-[5rem] h-[5rem]'/>
-                            </div>
-                            <button className='regadiant-btn !text-3xl w-full mt-8 text-black !text-bold'>CONNECT</button>
+                    <div>
+                        <h3 className='font-bold text-3xl my-4'>DAPP WALLET CONNECT</h3>
+                        <div className='!flex items-center justify-center rounded-3xl border border-[#155F5C] p-4'>
+                            <img src={bcard1} alt="Trust Wallet" onClick={() => connectWallet()} className='w-[5rem] h-[5rem] cursor-pointer' />
+                            <img src={bcard2} alt="Binance Smart Chain" onClick={() => connectWallet()} className='w-[5rem] h-[5rem] cursor-pointer' />
+                            <img src={bcard3} alt="SafePal" onClick={() => connectWallet()} className='w-[6rem] h-[6rem] cursor-pointer' />
+                            <img src={bcard4} alt="TokenPocket" onClick={() => connectWallet()} className='w-[5rem] h-[5rem] cursor-pointer' />
+                            <img src={bcard5} alt="MetaMask" onClick={() => connectWallet()} className='w-[5rem] h-[5rem] cursor-pointer' />
                         </div>
+                        {/* connect wallet button  */}
+                        <button
+                            onClick={() => handleConnectClick()}
+                            className='regadiant-btn !text-3xl w-full mt-8 text-black !text-bold'>
+                            CONNECT
+                        </button>
+
+                    </div>
 
                 </div>
             </div>
