@@ -60,5 +60,10 @@ export const AuthenticatedRoutes = {
   USDT_BEP: "/usdt-bep",
   USDT_TRC: "/usdt-trc",
   Activity: "/activity",
-
+  HISTORY: "/history",
+  AI_AGENT: "/ai-agent",
+  AI_AGENT_DETAILS: "/ai-agent-details/:id",
+  SUPPORT: "/support",
+  ANNOUNCEMENTS: "/announcements",
+  LEVEL_ACHIEVEMENT: "/level-achievement",
 };

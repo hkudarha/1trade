@@ -1,12 +1,13 @@
 import { FaUsers, FaUserTie } from "react-icons/fa";
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
-import { LuPackageSearch } from "react-icons/lu";
+import { LuBrainCircuit, LuPackageSearch } from "react-icons/lu";
 import { AuthenticatedRoutes } from "../Routes";
 import { FaRegNewspaper, FaWallet } from "react-icons/fa6";
-import { MdOutlineAddCard } from "react-icons/md";
-import { BiSupport } from "react-icons/bi";
+import { MdManageHistory, MdOutlineAddCard } from "react-icons/md";
 import { MainContent } from "./MainContent";
 import { TfiAnnouncement } from "react-icons/tfi";
+import { BiSupport } from "react-icons/bi";
+import { GrAchievement, GrAnnounce } from "react-icons/gr";
 
 export const SidebarContent = {
     user: [
@@ -21,7 +22,7 @@ export const SidebarContent = {
             icon: <HiOutlineSquares2X2 />,
             name: "Assets",
             link: AuthenticatedRoutes.ASSETS,
-             options: [
+            options: [
                 {
                     id: "Dapp Wallet",
                     name: "Dapp Wallet",
@@ -39,7 +40,7 @@ export const SidebarContent = {
                 },
             ],
         },
-         {
+        {
             id: "Wallet",
             icon: <FaWallet />,
             name: "Wallet",
@@ -94,11 +95,36 @@ export const SidebarContent = {
                 // },
             ],
         },
- 
-    
-       
-
-
+        {
+            id: "History",
+            icon: <MdManageHistory />,
+            name: "History",
+            link: AuthenticatedRoutes.HISTORY,
+        },
+        {
+            id: "AI Agent",
+            icon: <LuBrainCircuit />,
+            name: "AI Agent",
+            link: AuthenticatedRoutes.AI_AGENT,
+        },
+        {
+            id: "Support-AI",
+            icon: <BiSupport />,
+            name: "Support",
+            link: AuthenticatedRoutes.SUPPORT,
+        },
+        {
+            id: "Announcements",
+            icon: <GrAnnounce />,
+            name: "Announcements",
+            link: AuthenticatedRoutes.ANNOUNCEMENTS,
+        },
+        {
+            id: "Level Achievement",
+            icon: <GrAchievement />,
+            name: "Level Achievement",
+            link: AuthenticatedRoutes.LEVEL_ACHIEVEMENT,
+        },
         {
             id: "Notification & Announcements",
             icon: <TfiAnnouncement />,
@@ -114,7 +140,7 @@ export const SidebarContent = {
             name: "Acitvity",
             link: AuthenticatedRoutes.Activity,
         },
-       
+
         {
             id: "Our Team",
             icon: <FaUsers />,
@@ -149,7 +175,7 @@ export const SidebarContent = {
                 },
             ],
         },
-        
+
         {
             id: "Support",
             icon: <BiSupport />,
