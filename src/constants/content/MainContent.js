@@ -20,7 +20,6 @@ export const backendConfig = {
   // origin: "https://api.bitblock.network",
   // base: "http://192.168.3.56:6018/api",
   // origin: "http://192.168.3.56:6018",
-<<<<<<< HEAD
   // base: "https://api.worldtrades.in/api",
   // origin: "https://api.worldtrades.in",
   // base: "http://192.168.29.127:6042/api",
