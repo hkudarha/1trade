@@ -62,6 +62,8 @@ import Support from "../user/Support";
 import Announcement from "../user/Announcement";
 import LevelAchievement from "../user/LevelAchievement";
 // import { useEffect } from "react";
+import History from "../user/income-pages/History";
+
 
 const Authenticate = () => {
 
@@ -365,6 +367,15 @@ const Authenticate = () => {
                             }
                         />
                         <Route
+                            path={AuthenticatedRoutes.HISTORY}
+                            element={
+                                <DashboardMain
+                                    inner={<History />}
+                                    name="History"
+                                />
+                            }
+                        />
+                        <Route
                             path={AuthenticatedRoutes.TEAM_TREE}
                             element={
                                 <DashboardMain
@@ -519,43 +530,43 @@ const Authenticate = () => {
                                     name="AI Agent"
                                 />
                             }
-                            />
-                            <Route
-                                path={AuthenticatedRoutes.AI_AGENT_DETAILS}
-                                element={
-                                    <DashboardMain
-                                        inner={<AiAgentDetails />}
-                                        name="AI Agent Details"
-                                    />
-                                }
-                            />
-                            <Route
-                                path={AuthenticatedRoutes.SUPPORT}
-                                element={
-                                    <DashboardMain
-                                        inner={<Support />}
-                                        name="Support"
-                                    />
-                                }
-                            />
-                            <Route
-                                path={AuthenticatedRoutes.ANNOUNCEMENTS}
-                                element={
-                                    <DashboardMain
-                                        inner={<Announcement />}
-                                        name="Announcements"
-                                    />
-                                }
-                            />
-                            <Route
-                                path={AuthenticatedRoutes.LEVEL_ACHIEVEMENT}
-                                element={
-                                    <DashboardMain
-                                        inner={<LevelAchievement />}
-                                        name="Level Achievement"
-                                    />
-                                }
-                            />
+                        />
+                        <Route
+                            path={AuthenticatedRoutes.AI_AGENT_DETAILS}
+                            element={
+                                <DashboardMain
+                                    inner={<AiAgentDetails />}
+                                    name="AI Agent Details"
+                                />
+                            }
+                        />
+                        <Route
+                            path={AuthenticatedRoutes.SUPPORT}
+                            element={
+                                <DashboardMain
+                                    inner={<Support />}
+                                    name="Support"
+                                />
+                            }
+                        />
+                        <Route
+                            path={AuthenticatedRoutes.ANNOUNCEMENTS}
+                            element={
+                                <DashboardMain
+                                    inner={<Announcement />}
+                                    name="Announcements"
+                                />
+                            }
+                        />
+                        <Route
+                            path={AuthenticatedRoutes.LEVEL_ACHIEVEMENT}
+                            element={
+                                <DashboardMain
+                                    inner={<LevelAchievement />}
+                                    name="Level Achievement"
+                                />
+                            }
+                        />
                     </>
                 )}
             </Routes>

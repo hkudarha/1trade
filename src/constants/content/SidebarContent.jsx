@@ -4,6 +4,7 @@ import { LuBrainCircuit, LuPackageSearch } from "react-icons/lu";
 import { AuthenticatedRoutes } from "../Routes";
 import { FaRegNewspaper, FaWallet } from "react-icons/fa6";
 import { MdManageHistory, MdOutlineAddCard } from "react-icons/md";
+import { BiSupport } from "react-icons/bi";
 import { MainContent } from "./MainContent";
 import { TfiAnnouncement } from "react-icons/tfi";
 import { BiSupport } from "react-icons/bi";
