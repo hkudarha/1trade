@@ -55,15 +55,6 @@ import DappWallet from "../../components/DappWallet";
 import UsdtBEP from "../../components/UsdtBEP";
 import UsdtTRC from "../../components/UsdtTRC";
 import Activity from "../user/Activity";
-import Withdrawalnew from "../../components/Withdrawalnew";
-import Market from "../../components/Market";
-import AirdropAlert from "../user/AirdropAlert";
-import History from "../user/History"
-import AiAgent from "../user/AiAgent";
-import AiAgentDetails from "../user/AiAgentDetails";
-import Support from "../user/Support";
-import Announcement from "../user/Announcement";
-import LevelAchievement from "../user/LevelAchievement";
 // import { useEffect } from "react";
 
 
@@ -235,9 +226,7 @@ const Authenticate = () => {
                                 />
                             }
                         />
-                        {/* Routes added by vikas  */}
-                        
-                        <Route
+                         <Route
                             path={AuthenticatedRoutes.Activity}
 
                             element={
@@ -248,7 +237,7 @@ const Authenticate = () => {
                             }
                         />
                          <Route
-                            path={AuthenticatedRoutes.USERAIRDROPALERT}
+                            path={AuthenticatedRoutes.AirdropAlert}
                             
                             element={
                                 <DashboardMain
