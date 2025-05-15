@@ -135,7 +135,7 @@ export const CryptoList = ({ category }) => {
                     placeholder="Search coins..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full p-2 rounded-lg bg-[#1d1e23] text-white border border-[#01EBE0] focus:outline-none focus:ring-2 focus:ring-[#01EBE0]"
+                    className="w-full p-2 rounded-lg bg-[#1d1e23] text-white text-2xl border border-[#01EBE0] focus:outline-none focus:ring-2 focus:ring-[#01EBE0]"
                 />
                 <button className="p-2 bg-[#01EBE0] text-black rounded-lg">
                     <FiSearch size={20} />
@@ -151,7 +151,7 @@ export const CryptoList = ({ category }) => {
                     >
                         <div className="flex items-center gap-3">
                             <div
-                                className="text-2xl"
+                                className="text-xl bg-gray-700 h-16 w-16 flex items-center justify-center rounded-full"
                                 style={{ color: coinColors[coin.name] || '#FFFFFF' }} // Default to white if no color defined
                             >
                                 {coin.icon}

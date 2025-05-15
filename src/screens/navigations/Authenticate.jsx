@@ -430,7 +430,7 @@ const Authenticate = () => {
                 />
               }
             />
-            <Route
+            {/* <Route
               path={AuthenticatedRoutes.NEWS_AND_NOTIF}
               element={
                 <DashboardMain
@@ -438,7 +438,7 @@ const Authenticate = () => {
                   name="Notification & Announcements "
                 />
               }
-            />
+            /> */}
             <Route
               path={AuthenticatedRoutes.HISTORY}
               element={<DashboardMain inner={<History />} name="History" />}
@@ -472,6 +472,24 @@ const Authenticate = () => {
                 <DashboardMain
                   inner={<LevelAchievement />}
                   name="Level Achievement"
+                />
+              }
+            />
+            <Route
+              path={AuthenticatedRoutes.USERAIRDROPALERT}
+              element={
+                <DashboardMain
+                  inner={<AirdropAlert />}
+                  name="Airdrop Alert"
+                />
+              }
+            />
+             <Route
+              path={AuthenticatedRoutes.MARKET}
+              element={
+                <DashboardMain
+                  inner={<Market />}
+                  name="Market"
                 />
               }
             />

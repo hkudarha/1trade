@@ -80,15 +80,15 @@ const AiAgentDetails = () => {
                     {/* Right Side */}
                     <div className='w-full lg:w-1/2 space-y-6'>
                         <div>
-                            <h2 className='text-xl sm:text-2xl'>1. Fund Overview</h2>
-                            <p className='text-base sm:text-lg font-normal text-gray-300'>
+                            <h2 className='text-xl sm:text-3xl mb-2'>1. Fund Overview</h2>
+                            <p className='text-base sm:text-2xl font-normal text-gray-300'>
                                 1Trade Fund is an innovative digital asset management plan based on AI Agent liquidity income, aiming to provide platform users with stable income opportunities...
                             </p>
                         </div>
 
                         <div>
-                            <h2 className='text-xl sm:text-2xl'>2. Fund Rules</h2>
-                            <div className='text-base sm:text-lg font-normal text-gray-300 space-y-4'>
+                            <h2 className='text-xl sm:text-3xl mb-2'>2. Fund Rules</h2>
+                            <div className='text-lg sm:text-2xl font-normal text-gray-300 space-y-4'>
                                 <p>a. Fund Pool Classification and Term...</p>
                                 <p>b. Income Calculation Method...</p>
                                 <p>c. Principal and Income Withdrawal...</p>

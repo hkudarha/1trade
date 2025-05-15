@@ -1,6 +1,6 @@
 import { FaUsers, FaUserTie } from "react-icons/fa";
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
-import { LuBrainCircuit, LuPackageSearch } from "react-icons/lu";
+import { LuBrainCircuit, LuPackageSearch, LuSquareActivity } from "react-icons/lu";
 import { AuthenticatedRoutes } from "../Routes";
 import { FaRegNewspaper, FaWallet } from "react-icons/fa6";
 import {
@@ -14,6 +14,8 @@ import { MdCheck } from "react-icons/md";
 import { MdCreditCard } from "react-icons/md";
 
 import { GrAchievement, GrAnnounce } from "react-icons/gr";
+import { FiAlertTriangle } from "react-icons/fi";
+import { SiCoinmarketcap } from "react-icons/si";
 export const SidebarContent = {
   user: [
     {
@@ -153,21 +155,21 @@ export const SidebarContent = {
 
     {
       id: "Activity",
-      icon: <TfiAnnouncement />,
+      icon: <LuSquareActivity />,
       name: "Acitvity",
       link: AuthenticatedRoutes.Activity,
     },
 
     {
       id: "AirDrop Alert",
-      icon: <TfiAnnouncement />,
-      name: "AIrDrop Alert",
+      icon:<FiAlertTriangle />,
+      name: "AirDrop Alert",
       link: AuthenticatedRoutes.USERAIRDROPALERT,
     },
 
     {
       id: "Market",
-      icon: <MdCheck />,
+      icon: <SiCoinmarketcap />,
       name: "Market",
       link: AuthenticatedRoutes.MARKET,
     },

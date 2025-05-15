@@ -5,26 +5,35 @@ import { AiFillMoneyCollect } from "react-icons/ai";
 import { BiMoneyWithdraw } from "react-icons/bi";
 import { FaBrain } from "react-icons/fa";
 import { LuBrainCircuit } from 'react-icons/lu';
+import { IoGiftSharp } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
 
 const History = () => {
   const historyBottomData = [
     {
       title: "Deposit",
       icon: <AiFillMoneyCollect className="text-2xl sm:text-3xl text-[#06C755]" />,
+      navigatePath: "/deposit",
+
     },
     {
       title: "Withdraw",
       icon: <BiMoneyWithdraw className="text-2xl sm:text-3xl text-[#06C755]" />,
+      navigatePath: "/withdrawal"
     },
     {
       title: "AI Agent",
-      icon: <FaBrain className="text-2xl sm:text-3xl text-[#06C755]" />,
+      icon: <LuBrainCircuit className="text-2xl sm:text-3xl text-[#06C755]" />,
+      navigatePath: "/ai-agent"
     },
     {
       title: "Rewards",
-      icon: <LuBrainCircuit className="text-2xl sm:text-3xl text-[#06C755]" />,
+      icon: <IoGiftSharp  className="text-2xl sm:text-3xl text-[#06C755]" />,
+      navigatePath: "/rewards"
     },
   ];
+
+  const navigate = useNavigate();
 
   return (
     <div className='space-y-10 p-4 md:p-10 max-w-screen-xl mx-auto'>
@@ -44,7 +53,7 @@ const History = () => {
               <div className='border-2 border-[#06C755] p-2 rounded-full'>
                 {item.icon}
               </div>
-              <GlowButton text={item.title} onClick={() => { }} />
+              <GlowButton text={item.title} onClick={() => navigate(`${item.navigatePath}`)} />
             </div>
           ))}
         </div>
