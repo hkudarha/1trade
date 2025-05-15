@@ -50,7 +50,7 @@ const DecentralizedFuture = () => {
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 leading-tight">
           The next generation of the internet
         </h2>
-        <p className="text-base sm:text-lg mt-4 text-gray-300">
+        <p className="text-base sm:text-xl mt-4 text-gray-300">
           Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci.
           At feugiat duis parturient amet scelerisque enim vulputate tortor.
         </p>

@@ -6,6 +6,31 @@ import img2 from "../../assets/website/img7.png";
 import img3 from "../../assets/website/img8.png";
 
 const Benefits = () => {
+  const cardData = [
+    {
+      img: img1,
+      title: "Decentralized Future",
+      desc: "Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci. At feugiat duis parturient amet scelerisque enim vulputate tortor.",
+      link: "/",
+      imgWidth: "w-[16rem]",
+    },
+    {
+      img: img2,
+      title: "Decentralized Future",
+      desc: "Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci. At feugiat duis parturient amet scelerisque enim vulputate tortor.",
+      link: "/",
+      imgWidth: "w-[16rem]",
+    },
+    {
+      img: img3,
+      title: "Decentralized Future",
+      desc: "Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci. At feugiat duis parturient amet scelerisque enim vulputate tortor.",
+      link: "/",
+      imgWidth: "w-[14rem]",
+    },
+  ];
+
+
   return (
     <section className="bg-[#151515] relative text-white py-16 px-6 md:px-[13rem] ">
       {/* Top  Heading */}
@@ -14,7 +39,7 @@ const Benefits = () => {
         <h2 className="text-[3.5rem] text-center mt-4">
           Web3 revolution with Next3Gen{" "}
         </h2>
-        <p className="text-center text-lg mt-4 ">
+        <p className="text-center text-xl mt-4 ">
           Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci.
           At feugiat <br />
           duis parturient amet scelerisque enim vulputate tortor.
@@ -22,42 +47,21 @@ const Benefits = () => {
       </div>
 
       <div className="w-full gap-[5rem] flex justify-between items-center max-sm:flex-col max-sm:gap-8 max-sm:px-4">
-  <div className="w-1/3 p-4 border rounded-2xl max-sm:w-full">
-    <img src={img1} alt="" className="w-[16rem] max-sm:w-full max-sm:h-auto"/>
-    <h3 className="text-[1.5rem] mt-4">Decentralized Future</h3>
-    <p className="text-[1rem] my-4">
-      Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci. At
-      feugiat duis parturient amet scelerisque enim vulputate tortor.
-    </p>
-    <Link to="/" className="text-[1.2rem]">
-      Learn More <span>&gt;</span>
-    </Link>
-  </div>
-  
-  <div className="w-1/3 p-4 border rounded-2xl max-sm:w-full">
-    <img src={img2} alt="" className="w-[16rem] max-sm:w-full max-sm:h-auto"/>
-    <h3 className="text-[1.5rem] mt-4">Decentralized Future</h3>
-    <p className="text-[1rem] my-4">
-      Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci. At
-      feugiat duis parturient amet scelerisque enim vulputate tortor.
-    </p>
-    <Link to="/" className="text-[1.2rem]">
-      Learn More <span>&gt;</span>
-    </Link>
-  </div>
-  
-  <div className="w-1/3 p-4 border rounded-2xl max-sm:w-full">
-    <img src={img3} alt="" className="w-[14rem] max-sm:w-full max-sm:h-auto"/>
-    <h3 className="text-[1.5rem] mt-4">Decentralized Future</h3>
-    <p className="text-[1rem] my-4">
-      Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci. At
-      feugiat duis parturient amet scelerisque enim vulputate tortor.
-    </p>
-    <Link to="/" className="text-[1.2rem]">
-      Learn More <span>&gt;</span>
-    </Link>
-  </div>
-</div>
+        {cardData.map((card, index) => (
+          <div key={index} className="w-1/3 p-4 border rounded-2xl max-sm:w-full">
+            <img
+              src={card.img}
+              alt={`card-${index + 1}`}
+              className={`${card.imgWidth} max-sm:w-full max-sm:h-auto`}
+            />
+            <h3 className="text-[1.8rem] mt-4">{card.title}</h3>
+            <p className="text-[1.2rem] my-4">{card.desc}</p>
+            <Link to={card.link} className="text-[1.2rem] text-blue-400 hover:underline">
+              Learn More <span>&gt;</span>
+            </Link>
+          </div>
+        ))}
+      </div>
 
     </section>
   );

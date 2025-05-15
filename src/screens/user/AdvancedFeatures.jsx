@@ -1,4 +1,3 @@
-import React from "react";
 import t1 from "../../assets/website/t1.png";
 import t2 from "../../assets/website/t2.png";
 import t3 from "../../assets/website/t3.png";
@@ -9,6 +8,35 @@ import t6 from "../../assets/website/t6.png";
 import "../../styles/buttons.css";
 
 const AdvancedFeatures = () => {
+
+  const advancedFeaturedData = [
+    {
+      id: 1,
+      src: t1,
+      value: "+34.89%",
+    },
+    {
+      id: 2,
+      src: t2,
+      value: "$3.67",
+    },
+    {
+      id: 3,
+      src: t3,
+      value: "$3.67",
+    },
+  ];
+
+
+  const tokenData = [
+    { img: t1, value: "+34.89" },
+    { img: t2, value: "+3.67" },
+    { img: t3, value: "+3.67" },
+    { img: t4, value: "+34.89" },
+    { img: t5, value: "+3.67" },
+    { img: t6, value: "+3.67" },
+  ];
+
   return (
     <section className="bg-[#151515] relative text-white py-16 px-6 md:px-[13rem] ">
       {/* Top  Heading */}
@@ -17,7 +45,7 @@ const AdvancedFeatures = () => {
         <h2 className="text-[3.5rem] text-center mt-4">
           Explore the Decentralized Future
         </h2>
-        <p className="text-center text-lg mt-4 ">
+        <p className="text-center text-2xl mt-4 ">
           Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci.
           <br /> At feugiat duis parturient amet scelerisque enim vulputate
           tortor.
@@ -34,22 +62,15 @@ const AdvancedFeatures = () => {
         <div className="w-1/2 p-10 max-sm:w-full max-sm:px-4">
           <div className="border border-[#494848] p-10 rounded-3xl">
             <div className="border border-[#464646] p-10 rounded-3xl">
-              <h6 className="text-[1.3rem]">Transactions</h6>
-              <p className="text-[1rem] mt-10">Today</p>
-
-              <div className="border border-[#464646] p-8 mt-10 rounded-3xl flex items-center justify-between">
-                <img src={t1} alt="" className="w-[3rem]" />
-                <p>+34.89</p>
-              </div>
-              <div className="border border-[#464646] p-8 mt-10 rounded-3xl flex items-center justify-between">
-                <img src={t2} alt="" className="w-[3rem]" />
-                <p>+34.89</p>
-              </div>
-              <p className="text-[1rem] mt-10">Today</p>
-
-              <div className="border border-[#464646] p-8 mt-10 rounded-3xl flex items-center justify-between">
-                <img src={t3} alt="" className="w-[3rem]" />
-                <p>+34.89</p>
+              <h6 className="text-[2rem]">Transactions</h6>
+              <p className="text-[1.5rem] mt-10">Today</p>
+              <div>
+                {advancedFeaturedData.map((item) => (
+                  <div className="border border-[#464646] p-8 mt-10 rounded-3xl flex items-center justify-between" key={item.id}>
+                    <img src={item.src} alt="" className="w-[3rem]" />
+                    <p className="text-xl">{item.value}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -61,14 +82,14 @@ const AdvancedFeatures = () => {
             <h3 className="text-[2.7rem] max-sm:text-[2rem]">
               Access Cutting-Edge Financial Tools and Services
             </h3>
-            <p className="text-[1rem] mt-10 max-sm:text-sm">
+            <p className="text-[1.6rem] mt-10 max-sm:text-sm">
               Access and interact with multiple blockchains
             </p>
 
             <div className="w-full flex items-center justify-center gap-10 mt-10 max-sm:flex-col max-sm:gap-4">
               <div className="w-1/2 max-sm:w-full">
                 <img src={tl} alt="" className="w-[7rem] max-sm:w-[5rem]" />
-                <h6 className="text-[1.3rem] mt-4 max-sm:text-base">
+                <h6 className="text-[1.5rem] mt-4 max-sm:text-base">
                   Yield Farming
                 </h6>
                 <p className="text-[1rem] mt-4 max-sm:text-sm">
@@ -78,7 +99,7 @@ const AdvancedFeatures = () => {
               </div>
               <div className="w-1/2 max-sm:w-full">
                 <img src={tl} alt="" className="w-[7rem] max-sm:w-[5rem]" />
-                <h6 className="text-[1.3rem] mt-4 max-sm:text-base">
+                <h6 className="text-[1.5rem] mt-4 max-sm:text-base">
                   Yield Farming
                 </h6>
                 <p className="text-[1rem] mt-4 max-sm:text-sm">
@@ -108,27 +129,16 @@ const AdvancedFeatures = () => {
               Seamless Multi- <br />
               Chain Integration
             </h3>
-            <p className="mt-4 text-[1rem] max-sm:text-sm">
-              Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium
-              orci. At feugiat duis parturient amet scelerisque enim vulputate
-              tortor.
-            </p>
-            <p className="mt-4 text-[1rem] max-sm:text-sm">
-              Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium
-              orci. At feugiat duis parturient amet scelerisque enim vulputate
-              tortor.
-            </p>
-            <p className="mt-4 text-[1rem] max-sm:text-sm">
-              Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium
-              orci. At feugiat duis parturient amet scelerisque enim vulputate
-              tortor.
-            </p>
-            <p className="mt-4 text-[1rem] max-sm:text-sm">
-              Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium
-              orci. At feugiat duis parturient amet scelerisque enim vulputate
-              tortor.
-            </p>
-            <button className="black_btn px-6 py-3 text-[1rem] rounded-full mt-10 max-sm:px-4 max-sm:py-2">
+            <div className="text-[1.4rem] max-sm:text-xl">
+              {
+                ["Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, ipsam!", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, ipsam!", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, ipsam!", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, ipsam!", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, ipsam!"].map((item, index) => (
+                  <p key={index} className="mt-4">
+                    {item}
+                  </p>
+                ))
+              }
+            </div>
+            <button className="black_btn px-6 py-3 text-[1.2rem] rounded-full mt-10 max-sm:px-4 max-sm:py-2">
               Learn More
             </button>
           </div>
@@ -137,35 +147,15 @@ const AdvancedFeatures = () => {
         {/* part3 right */}
         <div className="w-1/2 p-10 max-sm:w-full max-sm:px-4">
           <div className="border border-[#494848] p-10 rounded-3xl">
-            <div className="bg-[#262626] px-6 py-4 rounded-3xl flex items-center justify-between mt-4">
-              <img src={t1} alt="" className="w-[3rem]" />
-              <p className="text-[1rem] mr-[3rem]">5</p>
-            </div>
-
-            <div className="bg-[#262626] px-6 py-4 rounded-3xl flex items-center justify-between mt-4">
-              <img src={t2} alt="" className="w-[3rem]" />
-              <p className="text-[1rem] mr-[3rem]">5</p>
-            </div>
-
-            <div className="bg-[#262626] px-6 py-4 rounded-3xl flex items-center justify-between mt-4">
-              <img src={t3} alt="" className="w-[3rem]" />
-              <p className="text-[1rem] mr-[3rem]">5</p>
-            </div>
-
-            <div className="bg-[#262626] px-6 py-4 rounded-3xl flex items-center justify-between mt-4">
-              <img src={t4} alt="" className="w-[3rem]" />
-              <p className="text-[1rem] mr-[3rem]">5</p>
-            </div>
-
-            <div className="bg-[#262626] px-6 py-4 rounded-3xl flex items-center justify-between mt-4">
-              <img src={t5} alt="" className="w-[3rem]" />
-              <p className="text-[1rem] mr-[3rem]">5</p>
-            </div>
-
-            <div className="bg-[#262626] px-6 py-4 rounded-3xl flex items-center justify-between mt-4">
-              <img src={t6} alt="" className="w-[3rem]" />
-              <p className="text-[1rem] mr-[3rem]">5</p>
-            </div>
+            {tokenData.map((token, index) => (
+              <div
+                key={index}
+                className="bg-[#262626] px-6 py-4 rounded-3xl flex items-center justify-between mt-4"
+              >
+                <img src={token.img} alt={`token-${index + 1}`} className="w-[3rem]" />
+                <p className="text-[1rem] mr-[3rem]">{token.value}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -204,27 +194,17 @@ const AdvancedFeatures = () => {
               Seamless Multi- <br />
               Chain Integration
             </h3>
-            <p className="mt-4 text-[1rem] max-sm:text-sm">
-              Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium
-              orci. At feugiat duis parturient amet scelerisque enim vulputate
-              tortor.
-            </p>
-            <p className="mt-4 text-[1rem] max-sm:text-sm">
-              Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium
-              orci. At feugiat duis parturient amet scelerisque enim vulputate
-              tortor.
-            </p>
-            <p className="mt-4 text-[1rem] max-sm:text-sm">
-              Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium
-              orci. At feugiat duis parturient amet scelerisque enim vulputate
-              tortor.
-            </p>
-            <p className="mt-4 text-[1rem] max-sm:text-sm">
-              Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium
-              orci. At feugiat duis parturient amet scelerisque enim vulputate
-              tortor.
-            </p>
-            <button className="black_btn px-6 py-3 text-[1rem] mt-10 max-sm:px-4 max-sm:py-2">
+            <div>
+              {
+                [" Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci.At feugiat duis parturient amet scelerisque enim vulputate tortor.", " Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci.At feugiat duis parturient amet scelerisque enim vulputate tortor.", " Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci.At feugiat duis parturient amet scelerisque enim vulputate tortor."].map((item, index) => (
+                  <p key={index} className="mt-4 text-xl max-sm:text-sm">
+                    {item}
+                  </p>
+                ))
+              }
+            </div>
+
+            <button className="black_btn px-6 py-3 text-[1.2rem] mt-10 max-sm:px-4 max-sm:py-2">
               Learn More
             </button>
           </div>

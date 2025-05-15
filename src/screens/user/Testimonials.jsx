@@ -12,7 +12,7 @@ const Testimonials = () => {
         <h2 className="text-[3.5rem] text-center mt-4">
           What our customers say
         </h2>
-        <p className="text-center text-lg mt-4 ">
+        <p className="text-center text-xl mt-4 ">
           Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci.
           <br />
           At feugiat duis parturient amet scelerisque enim vulputate tortor.
@@ -22,8 +22,8 @@ const Testimonials = () => {
       {/* card  */}
       <div className="border rounded-3xl flex-col items-center justify-center py-[5rem] mt-5">
         <img src={cardimg} alt="" srcset="" className="w-[4rem] mx-auto mb-10" />
-        <h4 className="text-center text-[1.5rem]">Web3Go is my go-to platform for things blockchain,</h4>
-        <p className="text-center text-lg my-4 ">Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci. At feugiat duis parturient amet scelerisque enim vulputate tortor. </p>
+        <h4 className="text-center text-[2rem]">Web3Go is my go-to platform for things blockchain,</h4>
+        <p className="text-center text-xl my-4 ">Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci. At feugiat duis parturient amet scelerisque enim vulputate tortor. </p>
       </div>
     </section>
   );

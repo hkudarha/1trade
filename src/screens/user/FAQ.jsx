@@ -45,7 +45,7 @@ export default function FAQ() {
         <h2 className="text-white text-[4rem] font-bold text-center mb-8">
         Question and answers
         </h2>
-        <p  className="text-center text-lg my-4 ">Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci. At feugiat duis parturient amet scelerisque enim vulputate tortor. </p>
+        <p  className="text-center text-xl my-4 ">Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium orci. At feugiat duis parturient amet scelerisque enim vulputate tortor. </p>
         {faqs.map((faq, index) => (
           <div key={index} className="mb-4 relative z-50">
             <button

@@ -27,7 +27,7 @@ const DecentralizedFuture2 = () => {
           <h2 className="text-[3.5rem] text-center mt-4">
             Real-time exchange rates
           </h2>
-          <p className="text-center text-lg mt-4 ">
+          <p className="text-center text-xl mt-4 ">
             Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium
             orci. At <br /> feugiat duis parturient amet scelerisque enim
             vulputate tortor.
@@ -39,12 +39,12 @@ const DecentralizedFuture2 = () => {
             <div className="flex items-center gap-5">
               <img src={b1} alt="" className="w-[4rem]" />
 
-              <p className="text-white font-semibold text-lg">
+              <p className="text-white font-semibold text-xl">
                 1 BTC = $ 32,458.00
               </p>
             </div>
             <div className="custom-gradient-button flex justify-between items-center">
-              This Week <FaChevronDown className="ml-2 text-sm" />
+              This Week <FaChevronDown className="ml-2 text-xl" />
             </div>
           </div>
 
@@ -81,7 +81,7 @@ const DecentralizedFuture2 = () => {
             Join the web3 <br />
             revolution with Next3Gen
           </h2>
-          <p className="text-start text-lg mt-4 ">
+          <p className="text-start text-xl mt-4 ">
             Lorem ipsum dolor sit amet consectetur. Diam et quis sit pretium
             orci. At <br /> feugiat duis parturient amet scelerisque enim
             vulputate tortor.
