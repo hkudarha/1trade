@@ -72,14 +72,14 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`Sidebar  ${isSidebarOpen ? "show" : "hide"}`}
+      className={`Sidebar  ${isSidebarOpen ? "show sm:bg-transparent bg-black/95" : "hide"}`}
       id="navbar"
     >
       <nav className="nav">
         <div>
           <Link to={AuthenticatedRoutes.USER_DASHBOARD} className="nav-logo">
             <div className="flex items-center mt-10">
-              <img src={logo} alt="T_image" className="w-[3rem] md:w-[6rem]" />
+              <img src={logo} alt="T_image" className="w-[6rem] sm:w-[8rem] mx-auto" />
               
             </div>
           </Link>

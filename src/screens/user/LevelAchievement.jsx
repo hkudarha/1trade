@@ -89,24 +89,32 @@ const LevelAchievement = () => {
           </div>
 
           {/* Profile card */}
-          <div className='bg-[#25272D] rounded-3xl p-4 flex flex-col md:flex-row items-center justify-center gap-4'>
-            <div className='w-full md:w-1/2 flex items-center justify-center'>
+          <div className='bg-[#25272D] rounded-3xl p-4 flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left'>
+            {/* Profile Image */}
+            <div className='w-full md:w-1/2 flex justify-center'>
               <div className='w-fit rounded-full bg-gray-700 p-4'>
-                <img src={profile} alt="profile-image" className='w-40 md:w-52 h-40 md:h-52 object-cover' />
+                <img
+                  src={profile}
+                  alt="profile-image"
+                  className='w-32 h-32 md:w-52 md:h-52 object-cover rounded-full'
+                />
               </div>
             </div>
-            <div className='w-full md:w-1/2 space-y-2'>
-              <h1 className='text-2xl md:text-[2.5rem] '>Aniket Sharma</h1>
-              <div className='flex items-center  gap-2 text-lg'>
+
+            {/* Info Section */}
+            <div className='w-full md:w-1/2 flex flex-col items-center md:items-start gap-3'>
+              <h1 className='text-2xl md:text-[2.5rem] font-semibold'>Aniket Sharma</h1>
+              <div className='flex items-center gap-2 text-lg'>
                 <p>UUID: 123456</p>
                 <MdContentCopy />
               </div>
-              <div className='flex items-center gap-2'>
+              <div className='flex items-center gap-4'>
                 <GlowButton text="Active" onClick={() => { }} />
-                <MdOutlineErrorOutline className='text-[2rem] md:text-[3rem]' />
+                <MdOutlineErrorOutline className='text-2xl md:text-3xl' />
               </div>
             </div>
           </div>
+
 
         </div>
       </div>

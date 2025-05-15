@@ -100,6 +100,50 @@ const UserHome = () => {
       });
   };
 
+  const incomeData = [
+    {
+      title: "Total Balance",
+      value: (user?.totalEarnings ?? 0).toFixed(2),
+      img: "https://img.icons8.com/3d-fluency/94/money.png"
+    },
+    {
+      title: "Total Depost",
+      value: (user?.currentEarnings ?? 0).toFixed(2),
+      img: "https://img.icons8.com/3d-fluency/94/coin-wallet.png"
+    },
+    {
+      title: "Total Withdraw",
+      value: (user?.totalInvestment ?? 0).toFixed(2),
+      img: "https://img.icons8.com/3d-fluency/94/growing-money.png"
+    },
+    {
+      title: "Returnal Earning",
+      value: (user?.directReferalAmount ?? 0).toFixed(2),
+      img: "https://img.icons8.com/3d-fluency/94/expensive-price.png"
+    },
+    {
+      title: "Total Invest",
+      value: (user?.totalRoi ?? 0).toFixed(2),
+      img: "https://img.icons8.com/3d-fluency/94/business-management.png"
+    },
+    {
+      title: "Total Running Invest",
+      value: (user?.levelIncome ?? 0).toFixed(2),
+      img: "https://img.icons8.com/isometric/50/no-connection.png"
+    },
+    {
+      title: "Total Invest Completed",
+      value: user?.referedUsers?.length ?? 0,
+      img: "https://img.icons8.com/isometric/50/user.png"
+    },
+    {
+      title: "Total Profit + Capital",
+      value: user?.currentRank || "Beginner",
+      img: "https://img.icons8.com/3d-fluency/94/prize.png"
+    }
+  ]
+
+
   const IncomeCard = ({ title, value, img }) => (
     <div className="income-card ss-card ">
       <div className="left">
@@ -144,60 +188,28 @@ const UserHome = () => {
         </div>
       </div> */}
 
-      <div className="w-full h-full flex justify-between items-center">
-        <div className="income-wrapper mar-top !w-1/2 ">
-          <IncomeCard
-            title="Total Balance"
-            value={user?.totalEarnings?.toFixed(2) || "0"}
-            img="https://img.icons8.com/3d-fluency/94/money.png"
-          />
-          <IncomeCard
-            title="Total Depost"
-            value={user?.currentEarnings?.toFixed(2) || "0"}
-            img="https://img.icons8.com/3d-fluency/94/coin-wallet.png"
-          />
-          <IncomeCard
-            title="Total Withdraw"
-            value={user?.totalInvestment?.toFixed(2) || "0"}
-            img="https://img.icons8.com/3d-fluency/94/growing-money.png"
-          />
-          <IncomeCard
-            title="Returnal Earning"
-            value={user?.directReferalAmount?.toFixed(2) || "0"}
-            img="https://img.icons8.com/3d-fluency/94/expensive-price.png"
-          />
-          <IncomeCard
-            title="Total Invest"
-            value={user?.totalRoi?.toFixed(2) || "0"}
-            img="https://img.icons8.com/3d-fluency/94/business-management.png"
-          />
-          <IncomeCard
-            title="Total Running Invest"
-            value={user?.levelIncome?.toFixed(2) || "0"}
-            img="https://img.icons8.com/isometric/50/no-connection.png"
-          />
-          <IncomeCard
-            title="Total Invest Completed"
-            value={user?.referedUsers?.length || "0"}
-            img="https://img.icons8.com/isometric/50/user.png"
-          />
-          <IncomeCard
-            title="Total Profit + Capital"
-            value={user?.currentRank || "Beginner"}
-            img="https://img.icons8.com/3d-fluency/94/prize.png"
-          />
-          
+      <div className="w-full h-full flex sm:flex-row flex-col justify-between sm:items-center">
+        <div className="income-wrapper mar-top sm:!w-1/2 w-full">
+          {incomeData.map((item, index) => (
+            <IncomeCard
+              key={index}
+              title={item.title}
+              value={item.value}
+              img={item.img}
+            />
+          ))}
         </div>
 
+
         {/* bar chart  */}
-        <div className="w-1/2 h-full  p-4 ">
-          <div className="bg-[#1E1E1E] mx-auto mb-10 rounded-2xl pt-10  w-[400px] md:w-[500px]">
-            
+        <div className="sm:w-1/2 h-full w-full mt-5">
+          <div className="bg-[#1E1E1E] mx-auto mb-10 rounded-2xl pt-10  sm:w-[500px] w-full md:w-[500px]">
+
             <div className="flex  justify-between items-center mb-4">
               <div className="flex items-center gap-5">
-                
-                <p className="text-white font-semibold text-lg ml-10">
-                Exchange rate dynamics
+
+                <p className="text-white font-semibold text-2xl p-4">
+                  Exchange rate dynamics
                 </p>
               </div>
               {/* <div className="custom-gradient-button flex justify-between items-center">
@@ -206,7 +218,7 @@ const UserHome = () => {
             </div>
 
             {/* Chart */}
-            <div className="h-[37rem] w-[50rem] mx-auto overflow-hidden relative ml-20">
+            <div className="h-[37rem] sm:w-[50rem] w-full mx-auto overflow-hidden relative ml-20">
               <ResponsiveContainer width="100%" height="100%">
                 <AreaChart data={data}>
                   <defs>

@@ -11,7 +11,7 @@ import bcard2 from "../assets/iconn.png"
 import bcard3 from "../assets/iconnn.png"
 import sideimg from "../assets/website/Rectangle 40450.png"
 import { FaBitcoin, FaEthereum } from 'react-icons/fa';
-import { SiRipple, SiBinance, SiSolana  } from 'react-icons/si';
+import { SiRipple, SiBinance, SiSolana } from 'react-icons/si';
 import { FiTrendingDown, FiTrendingUp } from 'react-icons/fi';
 
 const cryptoData = [
@@ -300,10 +300,7 @@ const Walletnew = () => {
                         </div>
                     </div>
 
-
-
-
-                    <div className='w-full flex gap-4  '>
+                    <div className='w-full flex gap-4'>
                         <div className="sm:w-[35rem] w-full card ">
                             <div className='card-inner'>
                                 <div className="text-2xl font-semibold ml-8 mb-4">TRANSACTIONS</div>
@@ -356,10 +353,9 @@ const Walletnew = () => {
                         </div>
 
                     </div>
-
                 </div>
 
-                <div className='w-full sm:w-[36rem] pl-4'>
+                <div className='w-full sm:w-[36rem] sm:pl-4'>
                     <div className='card mb-4'>
                         <div className="card-inner p-8 ">
                             <div className="flex justify-between items-center mb-4">
@@ -410,7 +406,7 @@ const Walletnew = () => {
                         <div className="card-inner p-4">
                             <h2 className="text-2xl font-semibold mb-4 ">WALLET OVERVIEW</h2>
 
-                            <img src={sideimg} alt="" className='h-[38rem] bg-cover'/>
+                            <img src={sideimg} alt="" className='h-[38rem] bg-cover' />
                         </div>
                     </div>
                 </div>
