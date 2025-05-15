@@ -25,7 +25,7 @@ const Navbar = () => {
 
         {/* Center Nav */}
         <div
-          className="hidden md:flex justify-center w-1/3 space-x-8 py-4 rounded-2xl bg-[#10161680] "
+          className="hidden md:flex justify-center p-4 space-x-8 py-4 rounded-2xl bg-[#10161680] "
           style={{
             borderRadius: "1.10438rem",
             background: "rgba(16, 22, 22, 0.50)",

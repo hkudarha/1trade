@@ -205,6 +205,6 @@
         justify-content: space-between;
     }
     .UserHome .income-wrapper .income-card {
-        width: 48%;
+        width: 100%;
     }
 }
