@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import logo from "../../assets/logo.png";
-
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -16,16 +15,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" text-white px-4 py-3  shadow-md relative z-50">
+    <nav className="text-white px-4 py-3 shadow-md relative z-50">
       <div className="mx-auto flex items-center justify-between w-full px-4 py-4">
         {/* Logo */}
-        <div className="flex items-center w-1/3">
+        <div className="flex items-center w-1/3 relative">
           <img src={logo} alt="T_image" className="w-[12rem] absolute" />
         </div>
 
-        {/* Center Nav */}
+        {/* Center Nav (visible on large and up) */}
         <div
-          className="hidden md:flex justify-center p-4 space-x-8 py-4 rounded-2xl bg-[#10161680] "
+          className="w-full hidden lg:flex justify-center px-4 lg:space-x-8 py-4 rounded-2xl bg-[#10161680]"
           style={{
             borderRadius: "1.10438rem",
             background: "rgba(16, 22, 22, 0.50)",
@@ -38,7 +37,7 @@ const Navbar = () => {
               0px 5.89px 2.945px 0px rgba(0, 0, 0, 0.09),
               0px 11.78px 5.89px 0px rgba(0, 0, 0, 0.09),
               0px 23.56px 11.78px 0px rgba(0, 0, 0, 0.09)
-    `,
+            `,
           }}
         >
           <a href="#" className="text-pink-500 text-[1.5rem] font-semibold">
@@ -64,8 +63,8 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Login/Dashboard Button */}
-        <div className="hidden md:flex justify-end w-1/3">
+        {/* Button (visible on large and up) */}
+        <div className="hidden lg:flex justify-end w-1/3">
           <button
             onClick={() => navigate(`${token ? "/dashboard" : "/login"}`)}
             className="ml-4 px-6 py-3 font-semibold rounded-xl text-[1.5rem]"
@@ -88,10 +87,10 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu Button */}
-        <div className="md:hidden z-50">
+        {/* Mobile/Tablet Menu Button (shown below lg) */}
+        <div className="lg:hidden z-50">
           <button onClick={toggleMenu}>
-            {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+            {isOpen ? <FiX size={28} /> : <FiMenu size={28} />}
           </button>
         </div>
       </div>
@@ -99,18 +98,17 @@ const Navbar = () => {
       {/* Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+          className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
           onClick={() => setIsOpen(false)}
         />
       )}
 
-      {/* Mobile Slide-in Menu */}
+      {/* Slide-in Mobile/Tablet Menu */}
       <div
-        className={`fixed top-0 left-0 h-full w-2/4 max-w-[300px] bg-[#030b27] text-white z-50 transform ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 flex flex-col items-center ease-in-out md:hidden px-5 py-12 space-y-12 text-left text-[1.8rem]`}
+        className={`fixed top-0 left-0 h-full w-2/4 max-w-[300px] bg-[#030b27] text-white z-50 transform ${isOpen ? "translate-x-0" : "-translate-x-full"
+          } transition-transform duration-300 flex flex-col items-center ease-in-out lg:hidden px-5 py-12 space-y-12 text-left text-[1.8rem]`}
       >
-        <img src={logo} className="w-[80%]" alt="" />
+        <img src={logo} className="w-[80%]" alt="logo" />
         <a
           href="#"
           className="block text-pink-500 font-semibold"
