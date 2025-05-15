@@ -1,14 +1,13 @@
 .AuthMain {
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    z-index: 1;
-    opacity: 50%;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 50%;
 }
-
 
 /* .AuthMain1 video {
     position: absolute;
@@ -17,25 +16,23 @@
     width: 100%;
     height: 100%;
     object-fit: cover;  */
-    /* Ensures the video covers the full screen */
-    /* z-index: -1; Places the video behind other content */
-    /* position: fixed;
+/* Ensures the video covers the full screen */
+/* z-index: -1; Places the video behind other content */
+/* position: fixed;
   } */
 
-
 .AuthMain .auth-inner {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-center;
 }
 
 .AuthMain .auth-inner .container-box {
-    
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 /* .AuthMain .auth-inner .container-box .content {
@@ -59,117 +56,113 @@
 } */
 
 @keyframes leftRightZag {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    50% {
-        transform: translateX(10px);
-    }
+  50% {
+    transform: translateX(10px);
+  }
 
-    100% {
-        transform: translateX(0);
-    }
-
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .AuthMain .auth-inner .container-box .content p,
 .AuthMain .auth-inner .container-box .content .accontTggle {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-    color: var(--white);
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: var(--white);
 }
 
 .AuthMain .auth-inner .container-box .content .mode-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 1.4rem;
-    color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  color: var(--black);
 }
 
-.AuthMain .auth-inner .container-box .inputFieldBox {
-    width: 100%;
+.AuthMain .auth-inner .inputFieldBox {
+  width: 100%;
 }
 
 .AuthMain .auth-inner .container-box .content .accontTggle {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .AuthMain .auth-inner .container-box .content p.active {
-    color: var(--main-purple);
+  color: var(--main-purple);
 }
 
 .AuthMain .auth-inner .container-box .content .TextInput {
-    transform: all .3s ease;
-    
+  transform: all 0.3s ease;
 }
 @media (min-width: 768px) and (max-width: 1299px) {
-    .AuthMain .auth-inner .container-box .content {
-        width: 100%;
-        padding: 2rem;
-        z-index: 2;
-    }
-    .AuthMain .auth-inner .container-box{
-        width: 50%;
-    }
+  .AuthMain .auth-inner .container-box .content {
+    width: 100%;
+    padding: 2rem;
+    z-index: 2;
+  }
+  .AuthMain .auth-inner .container-box {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 768px) {
-    .AuthMain .auth-inner .container-box {
-        width: 100%;
-    }
+  .AuthMain .auth-inner .container-box {
+    width: 100%;
+  }
 
-    .AuthMain .auth-inner .container-box .content {
-        width: 100%;
-        padding: 4rem;
-        z-index: 2;
-    }
+  .AuthMain .auth-inner .container-box .content {
+    width: 100%;
+    padding: 4rem;
+    z-index: 2;
+  }
 
-    .AuthMain .auth-inner .container-box .side-img {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 20%;
-        z-index: 1;
-    }
-    
+  .AuthMain .auth-inner .container-box .side-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    z-index: 1;
+  }
 }
 
 @media (max-width: 768px) {
-    .auth-inner {
-      flex-direction: column;
-      padding: 1rem !important;
-    }
-  
-    .auth-inner > div {
-      width: 100% !important;
-      padding: 1rem !important;
-    }
-  
-    /* Hide main side image on mobile */
-    /* .side-main-img {
+  .auth-inner {
+    flex-direction: column;
+    padding: 1rem !important;
+  }
+
+  .auth-inner > div {
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+
+  /* Hide main side image on mobile */
+  /* .side-main-img {
       display: none !important;
     } */
-  
-    /* Make sure the logo section is still visible */
-    .logo-wrapper {
-      position: relative !important;
-      width: 100% !important;
-      justify-content: center;
-      margin-top: 1rem;
-      display: flex !important;
-      gap: 1rem;
-    }
-  
-    .logo-wrapper img {
-      position: static !important;
-      margin: 0 auto;
-    }
-  
-    .container-box {
-      width: 100% !important;
-      padding: 1rem !important;
-    }
+
+  /* Make sure the logo section is still visible */
+  .logo-wrapper {
+    position: relative !important;
+    width: 100% !important;
+    justify-content: center;
+    margin-top: 1rem;
+    display: flex !important;
+    gap: 1rem;
   }
-  
+
+  .logo-wrapper img {
+    position: static !important;
+    margin: 0 auto;
+  }
+
+  .container-box {
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+}

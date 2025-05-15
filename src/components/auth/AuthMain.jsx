@@ -1,36 +1,35 @@
 /* eslint-disable react/prop-types */
-import sideImg from "../../assets/auth/sideImg.png";
-import bgVideo from "../../assets/website/bgVideo.mp4";
-import "../../styles/auth/AuthMain.css";
 import img from "../../assets/Rectangle 001.png";
 import logo from "../../assets/logo.png";
 
-/* eslint-disable react/no-unescaped-entities */
 const AuthMain = ({ inner }) => {
   return (
-    
-      <div data-aos="fade-right" className="AuthMain p-10 bg-[#141518]">
-          <div className="auth-inner  p-10  border-2 rounded-[2.5rem] border-[#06C755] bg-[#141518]">
-            {/* left  */}
-            <div className="w-1/2 h-full  px-10   flex items-center justify-center relative">
-              <img
-                src={img}
-                alt="side img"
-                className="w-full h-full bg-cover rounded-3xl side-main-img"
-              />
+    <div
+      data-aos="fade-right"
+      className="min-h-screen p-4 md:p-10 bg-[#141518] flex items-center justify-center"
+    >
+      <div className="flex flex-col md:flex-row w-full max-w-6xl border-2 rounded-[2.5rem] border-[#06C755] bg-[#141518] overflow-hidden">
 
-              <div className="flex absolute  items-center w-1/3">
-                <img src={logo} alt="T_image" className="w-[12rem] absolute" />
-                
-              </div>
-            </div>
-            <div className="w-1/2 mx-auto h-full flex items-center !justify-center ">
-              <div className="container-box ">{inner}</div>
-            </div>
-          </div>
-        </div>  
-      
-   
+        {/* Left Section - Image */}
+        <div className="w-full md:w-1/2 relative flex items-center justify-center p-4 md:p-10">
+          <img
+            src={img}
+            alt="side img"
+            className="w-full h-64 md:h-full object-cover rounded-2xl"
+          />
+          <img
+            src={logo}
+            alt="T_image"
+            className="absolute top-1/2 left-1/2 -translate-1/2 w-32 md:w-48"
+          />
+        </div>
+
+        {/* Right Section - Form */}
+        <div className="w-full md:w-1/2 flex items-center justify-center p-4 md:p-10">
+          <div className="w-full">{inner}</div>
+        </div>
+      </div>
+    </div>
   );
 };
 
