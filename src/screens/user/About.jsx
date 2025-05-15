@@ -20,7 +20,7 @@ const About = () => {
               id="top-left"
               className="w-1/2 pt-[10rem] pl-20 max-sm:w-full max-sm:pt-10 max-sm:pl-4 max-sm:pr-4"
             >
-              <h6 className="gradient-text max-sm:text-sm">
+              <h6 className="gradient-text max-sm:text-lg">
                 Digital Experience
               </h6>
               <h3 className="text-[3.5rem] mt-4 max-sm:text-2xl">
